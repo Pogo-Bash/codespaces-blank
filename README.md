@@ -1,8 +1,7 @@
 
 # Ohio Values
 
-How to install, build and run >
-
+Site to look up skin values in game Roblox Ohio
 
 ## Build and Run 
 
