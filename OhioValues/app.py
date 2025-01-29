@@ -27,6 +27,5 @@ def index(path):
 
 if __name__ == "__main__":
     from waitress import serve
-    # Use the PORT environment variable, defaulting to 8080 if not set
     port = int(os.environ.get("PORT", 8080))
     serve(app, host="0.0.0.0", port=port)
