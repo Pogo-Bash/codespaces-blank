@@ -7,6 +7,10 @@ Site to look up skin values in game Roblox Ohio
 
 To deploy this project run
 
+```
+git clone https://github.com/Pogo-Bash/OhioValues.git
+```
+
 ```bash
  cd OhioValues
 ```
