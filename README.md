@@ -21,7 +21,7 @@ git clone https://github.com/Pogo-Bash/OhioValues.git
  npm run build
 ```
 ```bash
- pip install requirements.txt
+ pip install -r requirements.txt
 ```
 
 ```bash
