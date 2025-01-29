@@ -15,7 +15,9 @@ def static_files(filename):
     if os.path.exists(file_path):
         response = make_response(send_from_directory(os.path.join(app.static_folder, "static"), filename))
         response.headers["Cache-Control"] = "public, max-age=3600"  # Set client-side caching
+        
         return response
+        
     return "File not found", 404
 
 @app.route("/", defaults={"path": ""})
@@ -30,3 +32,4 @@ if __name__ == "__main__":
     # Use the PORT environment variable, defaulting to 8080 if not set
     port = int(os.environ.get("PORT", 8080))
     serve(app, host="0.0.0.0", port=port)
+   
