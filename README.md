@@ -21,6 +21,10 @@ git clone https://github.com/Pogo-Bash/OhioValues.git
  npm run build
 ```
 ```bash
+ pip install -r requirements.txt
+```
+
+```bash
  python app.py
 ```
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
