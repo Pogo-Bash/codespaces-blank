@@ -11,7 +11,7 @@ const isMenuOpen = ref(false);
     <!-- Desktop Menu -->
     <div class="hidden lg:flex space-x-6">
       <a href="#" class="text-purple-300 hover:text-white transition">Home</a>
-      <a href="#" class="text-purple-300 hover:text-white transition">Values</a>
+      <a href="#" class="./values.html">Values</a>
       <a href="#" class="text-purple-300 hover:text-white transition">Forum</a>
       <a href="#" class="text-purple-300 hover:text-white transition">About</a>
     </div>
@@ -26,7 +26,7 @@ const isMenuOpen = ref(false);
     <!-- Mobile Dropdown Menu -->
     <div v-if="isMenuOpen" class="absolute top-16 right-6 bg-black/50 backdrop-blur-lg border border-purple-700 shadow-xl rounded-xl p-4 space-y-3 w-48 lg:hidden">
       <a href="#" class="block px-4 py-2 text-purple-300 hover:bg-purple-700 hover:text-white rounded transition">Home</a>
-      <a href="#" class="block px-4 py-2 text-purple-300 hover:bg-purple-700 hover:text-white rounded transition">Values</a>
+      <a href="./values.html" class="block px-4 py-2 text-purple-300 hover:bg-purple-700 hover:text-white rounded transition">Values</a>
       <a href="#" class="block px-4 py-2 text-purple-300 hover:bg-purple-700 hover:text-white rounded transition">Forum</a>
       <a href="#" class="block px-4 py-2 text-purple-300 hover:bg-purple-700 hover:text-white rounded transition">About</a>
     </div>
@@ -40,7 +40,7 @@ const isMenuOpen = ref(false);
         <p class="py-6 text-lg text-purple-200 drop-shadow">
           Welcome to Ohio Values!!!
         </p>
-        <a href="./Values.html" class="btn bg-black/50 text-purple-300 border border-purple-600 hover:bg-purple-700 hover:text-white transition-all shadow-md">Browse Values</a>
+        <a href="./values.html" class="btn bg-black/50 text-purple-300 border border-purple-600 hover:bg-purple-700 hover:text-white transition-all shadow-md">Browse Values</a>
       </div>
     </div>
   </div>

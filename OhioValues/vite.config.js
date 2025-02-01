@@ -1,11 +1,24 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import tailwindcss from '@tailwindcss/vite'
+import { viteStaticCopy } from "vite-plugin-static-copy";  // Correct import
 
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), tailwindcss()],
+  plugins: [
+    vue(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "values.html",  // Ensure values.html is copied
+          dest: ""  // Copy to the root of dist/
+        },
+
+        { 
+          src: "src/values.js", 
+          dest: "" 
+        },
+      ]
+    })
+  ],
 
   build: {
     outDir: "dist", // Output directory for built files
